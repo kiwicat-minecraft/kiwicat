@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KiwiKatze</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8e6;
+            color: #333;
+        }
+        header {
+            background-color: #76b852;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+        .hero-text {
+            flex: 1;
+            min-width: 300px;
+            padding-right: 2rem;
+        }
+        .hero-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        .placeholder-img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        .feature-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #76b852;
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #5c9840;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>KiwiKatze</h1>
+        <p>Die süßeste Verbindung zwischen Kiwi und Katze</p>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <div class="hero-text">
+                <h2>Willkommen bei KiwiKatze</h2>
+                <p>Entdecken Sie die wunderbare Welt von KiwiKatze, wo zwei ungewöhnliche Freunde zusammenkommen. Unsere einzigartige Mischung aus Katzencharme und Kiwi-Frische wird Sie begeistern!</p>
+                <a href="#" class="btn">Mehr erfahren</a>
+            </div>
+            <div class="hero-image">
+                <img src="/api/placeholder/400/320" alt="KiwiKatze Illustration" class="placeholder-img">
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3>Gesunde Ernährung</h3>
+                <p>Unsere KiwiKatzen lieben frisches Obst und gesunde Snacks, die ihnen Energie und Vitalität verleihen.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Verspielte Natur</h3>
+                <p>KiwiKatzen sind bekannt für ihre verspielte Art und ihre Fähigkeit, jeden Tag mit Freude zu erfüllen.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Treue Begleiter</h3>
+                <p>Eine KiwiKatze wird zu Ihrem treuesten Freund und begleitet Sie durch alle Höhen und Tiefen des Lebens.</p>
+            </div>
+        </section>
+
+        <section class="about">
+            <h2>Über uns</h2>
+            <p>KiwiKatze wurde 2023 gegründet, mit dem Ziel, die Welt ein bisschen grüner und flauschiger zu machen. Unsere Mission ist es, Freude und Gesundheit in jeden Haushalt zu bringen.</p>
+            <p>Wir glauben an nachhaltige Praktiken und umweltfreundliche Produkte, die sowohl für unsere pelzigen Freunde als auch für unseren Planeten gut sind.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 KiwiKatze GmbH. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>
