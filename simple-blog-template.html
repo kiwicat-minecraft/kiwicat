@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog - Easy to Customize</title>
+    <style>
+        /* CUSTOMIZE: Change these variables to update colors throughout the site */
+        :root {
+            --main-bg-color: #f5f5f5;
+            --header-bg-color: #333;
+            --header-text-color: #fff;
+            --accent-color: #4a90e2;
+            --text-color: #333;
+            --footer-bg-color: #333;
+            --footer-text-color: #fff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--main-bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Header styles */
+        header {
+            background-color: var(--header-bg-color);
+            color: var(--header-text-color);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        /* CUSTOMIZE: Change your blog title here */
+        .blog-title {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* CUSTOMIZE: Change your blog description here */
+        .blog-description {
+            font-size: 1.2rem;
+            font-weight: normal;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: var(--header-bg-color);
+            padding: 0.5rem 2rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        nav li {
+            margin: 0 1rem;
+        }
+
+        nav a {
+            color: var(--header-text-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Main content container */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Main content area */
+        main {
+            flex: 3;
+            min-width: 0;
+        }
+
+        /* Blog post styles */
+        .blog-post {
+            background-color: white;
+            border-radius: 5px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .post-title {
+            color: var(--text-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .post-meta {
+            color: #666;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .post-content {
+            margin-bottom: 1rem;
+        }
+
+        .post-content p {
+            margin-bottom: 1rem;
+        }
+
+        .read-more {
+            display: inline-block;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+        /* Sidebar styles */
+        aside {
+            flex: 1;
+            min-width: 250px;
+            margin-left: 2rem;
+        }
+
+        .sidebar-widget {
+            background-color: white;
+            border-radius: 5px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .widget-title {
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .categories-list, .recent-posts-list {
+            list-style-type: none;
+        }
+
+        .categories-list li, .recent-posts-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        .categories-list a, .recent-posts-list a {
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        .categories-list a:hover, .recent-posts-list a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: var(--footer-bg-color);
+            color: var(--footer-text-color);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: var(--footer-text-color);
+            margin: 0 0.5rem;
+            text-decoration: none;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            aside {
+                margin-left: 0;
+                margin-top: 2rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- CUSTOMIZE: Update header with your blog name and description -->
+    <header>
+        <h1 class="blog-title">My Awesome Blog</h1>
+        <h2 class="blog-description">Thoughts, stories and ideas.</h2>
+    </header>
+    
+    <!-- CUSTOMIZE: Update navigation with your page links -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <main>
+            <!-- BLOG POST TEMPLATE: Copy this section to add a new blog post -->
+            <article class="blog-post">
+                <h2 class="post-title">Welcome to My Blog</h2>
+                <div class="post-meta">Posted on <time datetime="2025-02-28">February 28, 2025</time> by Admin</div>
+                <div class="post-content">
+                    <p>
+                        Welcome to my blog! This is your first blog post. Edit or remove this post, then start blogging!
+                    </p>
+                    <p>
+                        This template is designed to be easy to customize. Just look for the "CUSTOMIZE" comments in the HTML to find areas you can change.
+                    </p>
+                    <p>
+                        To add a new blog post, simply copy the entire &lt;article class="blog-post"&gt;...&lt;/article&gt; section and paste it where you want the new post to appear.
+                    </p>
+                </div>
+                <a href="#" class="read-more">Read More →</a>
+            </article>
+            <!-- END BLOG POST TEMPLATE -->
+            
+            <!-- BLOG POST EXAMPLE: This is another example post -->
+            <article class="blog-post">
+                <h2 class="post-title">How to Add New Blog Posts</h2>
+                <div class="post-meta">Posted on <time datetime="2025-02-27">February 27, 2025</time> by Admin</div>
+                <div class="post-content">
+                    <p>
+                        Adding new posts is simple! Copy an existing post section and update the title, date, and content.
+                    </p>
+                    <p>
+                        You can customize the appearance of your blog by changing the CSS variables at the top of the style section.
+                    </p>
+                </div>
+                <a href="#" class="read-more">Read More →</a>
+            </article>
+            <!-- END BLOG POST EXAMPLE -->
+        </main>
+        
+        <aside>
+            <!-- CUSTOMIZE: About widget -->
+            <div class="sidebar-widget">
+                <h3 class="widget-title">About Me</h3>
+                <p>Welcome to my blog! I'm passionate about sharing my thoughts and experiences with the world.</p>
+                <p>Feel free to explore and leave comments.</p>
+            </div>
+            
+            <!-- CUSTOMIZE: Categories widget -->
+            <div class="sidebar-widget">
+                <h3 class="widget-title">Categories</h3>
+                <ul class="categories-list">
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">Lifestyle</a></li>
+                    <li><a href="#">Travel</a></li>
+                    <li><a href="#">Food</a></li>
+                </ul>
+            </div>
+            
+            <!-- CUSTOMIZE: Recent Posts widget -->
+            <div class="sidebar-widget">
+                <h3 class="widget-title">Recent Posts</h3>
+                <ul class="recent-posts-list">
+                    <li><a href="#">Welcome to My Blog</a></li>
+                    <li><a href="#">How to Add New Blog Posts</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    
+    <!-- CUSTOMIZE: Footer information -->
+    <footer>
+        <p>&copy; 2025 My Awesome Blog. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
