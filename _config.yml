@@ -1,4 +1,3 @@
-title: Mein Blog
-author: Kiwicat0_0
-description: Ein Blog über meine Spiele und Projekte
-theme: jekyll-theme-minimal
+theme: minima
+baseurl: "/kiwicat"
+url: "https://kiwicat-minecraft.github.io"
